@@ -83,3 +83,9 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Added poster-based menu cards: the 550 AFN special platter lists half-kilogram Degi Chicken, one biryani serving, one Coca-Cola, three breads, salad, and chutney; the Friday Degi Chicken poster offer lists 350 AFN with 370 AFN crossed out. Both are historical poster prices and require restaurant confirmation.
 - The Friday poster does not clearly confirm sides as included, so the card asks customers to confirm salad and vegetables. No gallery images were added.
 - Live verification after this update: the platter filter shows two poster-based cards; searching the contents for “Coca-Cola” returns the 550 AFN platter. Pashto, Dari, and English labels render, including the Dari inclusion heading. Vercel production deployment is Ready.
+
+## Pashto platter spelling correction — 2026-10-23
+
+- Standardized Pashto platter wording to «پلېټر» and its plural forms across page copy, menu data, gallery captions, and language translations.
+- `npm test` passed for 7 pages, 7 menu items, 3 branches, 20 gallery photos, and 3 locales. `node --check js/translations.js` passed.
+- Verified the latest GitHub commit and Vercel production deployment as Ready. Live menu shows the corrected spelling in category labels, platter names, and inclusion headings.
