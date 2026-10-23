@@ -7,6 +7,8 @@ const pages=['index.html','menu.html','offers.html','about.html','gallery.html',
 assert.equal(menuItems.length,6);
 assert.deepEqual(menuItems.map(x=>x.price).sort((a,b)=>a-b),[120,150,200,200,370,550]);
 assert.ok(menuItems.every(x=>x.verified===undefined));
+assert.equal(menuItems.flatMap(x=>x.images).length,7,'All seven supplied food images are mapped to menu items');
+for(const stem of menuItems.flatMap(x=>x.images)){const webp=await readFile(new URL(`../assets/images/menu/optimized/${stem}.webp.b64`,import.meta.url),'utf8');assert.ok(/^[A-Za-z0-9+/=]+$/.test(webp.trim()),`Optimized menu image stored: ${stem}`)}
 assert.equal(branches.length,3);
 assert.equal(galleryItems.length,20,'Gallery keeps the hero image and includes all nineteen user supplied gallery photos');
 assert.deepEqual(new Set(galleryItems.map(item=>item.category)),new Set(['food','branches','exterior','dining','interior']));
