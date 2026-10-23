@@ -44,7 +44,7 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 
 - Historical poster prices: biryani 120/150/200 AFN, half/full degi chicken 200/370 AFN, and special platter 550 AFN. Current prices are unverified.
 - Branch addresses and phones are user-supplied. Maps use Google Maps address searches, not verified exact pins. Shahr-e-Naw spelling/landmark needs confirmation, and no phone was supplied for that branch.
-- Facebook is linked as the official page; no official TikTok or active offer post was verified.
+- The user supplied the restaurant TikTok URL and it is linked alongside Facebook. No active offer post has been verified. The user confirmed free delivery; availability details such as service area or minimum order were not provided.
 - The hero uses the user-provided restaurant photo. Nineteen authentic user-provided photos now appear in the gallery, with their exact original bytes preserved as base64 source files and compressed WebP display derivatives. Food menu cards use CSS illustrations; no ratings or review counts are fabricated.
 - Contact is a local demo form only. No order submission, online payment, server, or admin dashboard exists.
 - The portfolio screenshot is a desktop capture. A mobile screenshot and exact viewport-width QA remain outstanding.
@@ -63,7 +63,7 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 
 - Added six more user-provided photographs. The gallery now contains 16 supplied photos plus the existing user-provided hero photo, 17 items total.
 - Preserved originals and added compressed WebP display versions.
-- Captions describe the visible subjects. Promotional poster images are not treated as proof of current prices or delivery promises.
+- Captions describe the visible subjects. Promotional poster images are not treated as proof of current prices. Free delivery is shown because the user confirmed it, with no unprovided conditions added.
 - Live verification: the deployed gallery showed 17 cards. The food filter showed six cards; the historical menu poster opened in the lightbox at 1152 px native width, Escape closed it, and focus returned to the poster card. No site-origin console errors were found. The six photos use compressed WebP data assets; images below the fold remain lazy-loaded. Browser checks ran at the available 1363 px desktop viewport; mobile widths and Lighthouse scores were not measured.
 
 
