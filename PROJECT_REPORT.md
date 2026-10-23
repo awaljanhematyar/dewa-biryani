@@ -45,7 +45,7 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Historical poster prices: biryani 120/150/200 AFN, half/full degi chicken 200/370 AFN, and special platter 550 AFN. Current prices are unverified.
 - Branch addresses and phones are user-supplied. Maps use Google Maps address searches, not verified exact pins. Shahr-e-Naw spelling/landmark needs confirmation, and no phone was supplied for that branch.
 - Facebook is linked as the official page; no official TikTok or active offer post was verified.
-- The hero uses the user-provided restaurant photo. Sixteen authentic user-provided photos now appear in the gallery, with their exact original bytes preserved as base64 source files and compressed WebP display derivatives. Food menu cards use CSS illustrations; no ratings or review counts are fabricated.
+- The hero uses the user-provided restaurant photo. Nineteen authentic user-provided photos now appear in the gallery, with their exact original bytes preserved as base64 source files and compressed WebP display derivatives. Food menu cards use CSS illustrations; no ratings or review counts are fabricated.
 - Contact is a local demo form only. No order submission, online payment, server, or admin dashboard exists.
 - The portfolio screenshot is a desktop capture. A mobile screenshot and exact viewport-width QA remain outstanding.
 
@@ -71,4 +71,4 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 
 - Added three more user-provided photographs: kebab grilling, a flaming platter, and the Dewa Biryani flag/sign. The gallery now contains 19 supplied photos plus the hero image (20 items total).
 - Kept the original JPEG file bytes as base64 assets; WebP display copies are optimized and lazy-loaded. Added translated alt text and captions in Pashto, Dari, and English.
-- Follow-up tests and live verification are recorded after publication.
+- Verification after publication: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery items, and 3 languages. `node --check js/main.js` and `node --check js/gallery-data.js` passed. The live gallery displayed all 20 cards. Its food filter showed 8 visible cards. Each of the three new photos opened in the lightbox; their natural image widths were 852, 962, and 963 px. The first lightbox image needed an extra 700 ms to finish loading. The available browser viewport was 1363 px; other responsive widths and Lighthouse scores were not measured.
