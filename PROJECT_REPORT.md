@@ -27,7 +27,7 @@ Website source published to GitHub and deployed to Vercel. Portfolio project car
 - Live route check: all seven pages opened and showed a main landmark, canonical URL, and meta description.
 - Live image check: hero and About photos loaded at 1200 px natural width. No broken non-dialog images were found on the seven pages.
 - Live desktop overflow check: no horizontal overflow at the available 1363 px viewport on all seven routes.
-- Live interaction checks: menu category filter and search, English/Dari switching with preference persisting after reload, three branch map embeds and three directions links, gallery lightbox open/Escape close, and contact demo validation without sending data all passed.
+- Live interaction checks: menu category filter and search, menu detail toggles, English/Dari switching with preference persisting after reload, three branch map embeds and three directions links, gallery All/Exterior filters, gallery lightbox open/Escape close, and contact demo validation without sending data all passed. Desktop carousel controls hide when all three cards fit, so inactive controls are not shown.
 - Lighthouse scores and automated WCAG scores were not measured.
 
 ## Responsive QA
