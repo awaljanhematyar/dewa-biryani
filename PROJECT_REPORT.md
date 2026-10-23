@@ -64,4 +64,4 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Added six more user-provided photographs. The gallery now contains 16 supplied photos plus the existing user-provided hero photo, 17 items total.
 - Preserved originals and added compressed WebP display versions.
 - Captions describe the visible subjects. Promotional poster images are not treated as proof of current prices or delivery promises.
-- Live verification and interaction results for these six additions are recorded after deployment.
+- Live verification: the deployed gallery showed 17 cards. The food filter showed six cards; the historical menu poster opened in the lightbox at 1152 px native width, Escape closed it, and focus returned to the poster card. No site-origin console errors were found. The six photos use compressed WebP data assets; images below the fold remain lazy-loaded. Browser checks ran at the available 1363 px desktop viewport; mobile widths and Lighthouse scores were not measured.
