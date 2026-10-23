@@ -76,9 +76,10 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 
 - Added seven user-provided food photographs to the existing menu cards: the three biryani sizes, half and full Degi Chicken, and the Special Platter. The full Degi Chicken card has two photos.
 - Preserved the JPEG originals and prepared optimized WebP display files. The menu references only the new menu assets; the gallery has not been changed.
-- Verification: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery photos, and 3 locales. On the live menu page, all 6 cards and 7 menu photos loaded at nonzero native image dimensions; the Degi Chicken filter showed 2 cards and 3 photos; searching for the platter returned the single matching card. The gallery remains unchanged. Live desktop browser QA only; mobile viewport widths and Lighthouse scores were not measured.
+- Earlier verification before the new platter entries: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery photos, and 3 locales. The gallery remains unchanged. Live desktop browser QA only; mobile viewport widths and Lighthouse scores were not measured.
 
 
 - Updated Pashto branding text from «دیوه» to «ډيوه» in page copy and gallery labels.
 - Added poster-based menu cards: the 550 AFN special platter lists half-kilogram Degi Chicken, one biryani serving, one Coca-Cola, three breads, salad, and chutney; the Friday Degi Chicken poster offer lists 350 AFN with 370 AFN crossed out. Both are historical poster prices and require restaurant confirmation.
 - The Friday poster does not clearly confirm sides as included, so the card asks customers to confirm salad and vegetables. No gallery images were added.
+- Live verification after this update: the platter filter shows two poster-based cards; searching the contents for “Coca-Cola” returns the 550 AFN platter. Pashto, Dari, and English labels render, including the Dari inclusion heading. Vercel production deployment is Ready.
