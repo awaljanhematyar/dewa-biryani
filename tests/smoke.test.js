@@ -8,7 +8,7 @@ assert.equal(menuItems.length,6);
 assert.deepEqual(menuItems.map(x=>x.price).sort((a,b)=>a-b),[120,150,200,200,370,550]);
 assert.ok(menuItems.every(x=>x.verified===undefined));
 assert.equal(branches.length,3);
-assert.equal(galleryItems.length,11,'Gallery keeps the hero image and adds exactly the ten supplied gallery photos');
+assert.equal(galleryItems.length,17,'Gallery keeps the hero image and includes all sixteen user supplied gallery photos');
 assert.deepEqual(new Set(galleryItems.map(item=>item.category)),new Set(['food','branches','exterior','dining','interior']));
 for(const item of galleryItems){for(const lang of ['ps','fa','en'])assert.ok(item.alt[lang]&&item.caption[lang],`Gallery labels are translated: ${item.id}/${lang}`);if(item.source!=='hero'){const webp=await readFile(new URL(`../assets/images/gallery/optimized/${item.source}.webp.b64`,import.meta.url),'utf8');const original=await readFile(new URL(`../assets/images/gallery/originals/${item.source}.${item.source==='05-1000474144'?'webp':'jpg'}.b64`,import.meta.url),'utf8');assert.ok(/^[A-Za-z0-9+/=]+$/.test(webp.trim()),`Optimized image stored: ${item.id}`);assert.ok(/^[A-Za-z0-9+/=]+$/.test(original.trim()),`Original image preserved: ${item.id}`)}}
 assert.ok(branches[1].phones.length===0,'Do not invent a Shahr-e-Naw phone number');
