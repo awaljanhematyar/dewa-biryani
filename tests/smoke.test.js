@@ -4,10 +4,16 @@ import {menuItems,branches,siteConfig} from '../js/data.js';
 import {translations} from '../js/translations.js';
 import {galleryItems} from '../js/gallery-data.js';
 const pages=['index.html','menu.html','offers.html','about.html','gallery.html','branches.html','contact.html'];
-assert.equal(menuItems.length,6);
-assert.deepEqual(menuItems.map(x=>x.price).sort((a,b)=>a-b),[120,150,200,200,370,550]);
+assert.equal(menuItems.length,7);
+assert.deepEqual(menuItems.map(x=>x.price).sort((a,b)=>a-b),[120,150,200,200,350,370,550]);
 assert.ok(menuItems.every(x=>x.verified===undefined));
-assert.equal(menuItems.flatMap(x=>x.images).length,7,'All seven supplied food images are mapped to menu items');
+assert.equal(menuItems.flatMap(x=>x.images).length,8,'Eight menu image references are mapped (one image is reused)');
+const specialPlatter=menuItems.find(x=>x.id==='special-platter');
+assert.deepEqual(specialPlatter.contents.ps,['نیم کیلو دیګي چرګ','یوه پرس بریاني','یو بوتل کوکاکولا','۳ دانې ډوډۍ','سلاد او چټني']);
+const fridayOffer=menuItems.find(x=>x.id==='friday-degi-offer');
+assert.equal(fridayOffer.price,350);assert.equal(fridayOffer.compareAt,370);
+assert.ok(fridayOffer.descriptions.ps.includes('پخواني'));
+for(const item of [specialPlatter,fridayOffer])for(const lang of ['ps','fa','en'])assert.ok(item.contents[lang].length,`Platter/offer contents translated: ${lang}`);
 for(const stem of menuItems.flatMap(x=>x.images)){const webp=await readFile(new URL(`../assets/images/menu/optimized/${stem}.webp.b64`,import.meta.url),'utf8');assert.ok(/^[A-Za-z0-9+/=]+$/.test(webp.trim()),`Optimized menu image stored: ${stem}`)}
 assert.equal(branches.length,3);
 assert.equal(galleryItems.length,20,'Gallery keeps the hero image and includes all nineteen user supplied gallery photos');
@@ -18,6 +24,8 @@ assert.equal(siteConfig.officialSocial.tiktok,'','Do not publish an unverified T
 for(const lang of ['ps','fa','en']) assert.ok(translations[lang].home&&translations[lang].menu&&translations[lang].contact);
 for(const lang of ['ps','fa','en'])for(const key of ['galleryAll','galleryFood','galleryInterior','galleryExterior','galleryDining','galleryBranches'])assert.ok(translations[lang][key],`Gallery filter translation: ${lang}/${key}`);
 for(const file of pages){const html=await readFile(new URL(`../${file}`,import.meta.url),'utf8');assert.match(html,/<title>.+<\/title>/);assert.match(html,/meta name="description"/);assert.match(html,/id="main"/);assert.match(html,/js\/main\.js/);}
+for(const file of [...pages,'js/translations.js','js/gallery-data.js'])assert.ok(!(await readFile(new URL(`../${file}`,import.meta.url),'utf8')).includes('دیوه'),'Use corrected Pashto brand spelling');
+const main=await readFile(new URL('../js/main.js',import.meta.url),'utf8');assert.match(main,/menu-includes/);
 const index=await readFile(new URL('../index.html',import.meta.url),'utf8');
 assert.match(index,/dewa-restaurant-hero\.webp/);
 const heroData=await readFile(new URL('../assets/images/hero/dewa-restaurant-hero.webp.b64',import.meta.url),'utf8');
