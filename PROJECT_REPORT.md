@@ -65,3 +65,10 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Preserved originals and added compressed WebP display versions.
 - Captions describe the visible subjects. Promotional poster images are not treated as proof of current prices or delivery promises.
 - Live verification: the deployed gallery showed 17 cards. The food filter showed six cards; the historical menu poster opened in the lightbox at 1152 px native width, Escape closed it, and focus returned to the poster card. No site-origin console errors were found. The six photos use compressed WebP data assets; images below the fold remain lazy-loaded. Browser checks ran at the available 1363 px desktop viewport; mobile widths and Lighthouse scores were not measured.
+
+
+## Gallery update 3 — 2026-10-23
+
+- Added three more user-provided photographs: kebab grilling, a flaming platter, and the Dewa Biryani flag/sign. The gallery now contains 19 supplied photos plus the hero image (20 items total).
+- Kept the original JPEG file bytes as base64 assets; WebP display copies are optimized and lazy-loaded. Added translated alt text and captions in Pashto, Dari, and English.
+- Follow-up tests and live verification are recorded after publication.
