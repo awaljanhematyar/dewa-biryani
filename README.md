@@ -27,8 +27,8 @@ Home, menu, offers, about, gallery, branches, and contact.
 - The contact form validates locally and does not send messages. Calls open the customer's phone app; there is no online order or payment flow.
 - No backend, admin dashboard, or login is included.
 - This is an independent demonstration concept, not a claim of an official or paid client project.
-- The user-provided restaurant photo and seven user-provided menu photos are stored as optimized WebP base64 text assets for static-host compatibility. Other branch-specific photographs were not supplied.
+- The user-provided restaurant photo and seven user-provided menu photos are stored as optimized WebP base64 text assets for static-host compatibility. Supporting branch cards use general user-provided restaurant photos where a branch-specific match is unavailable. One generated food illustration appears only as clearly labeled decorative artwork on the homepage, not as an actual restaurant photo or current offer.
 
 ## Verification
 
-Run `npm test` for local smoke checks. Live desktop route and interaction findings are recorded in `PROJECT_REPORT.md`. Mobile screenshot capture and exact requested viewport measurements remain outstanding.
+Run `npm test` for local smoke checks. Live desktop route and interaction findings are recorded in `PROJECT_REPORT.md`. Gallery contents remain at 20 user-supplied images. The latest supplemental imagery changes have passed local smoke tests; live verification is recorded after publication.

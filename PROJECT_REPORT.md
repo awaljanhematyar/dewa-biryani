@@ -89,3 +89,12 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Standardized Pashto platter wording to «پلېټر» and its plural forms across page copy, menu data, gallery captions, and language translations.
 - `npm test` passed for 7 pages, 7 menu items, 3 branches, 20 gallery photos, and 3 locales. `node --check js/translations.js` passed.
 - Verified the latest GitHub commit and Vercel production deployment as Ready. Live menu shows the corrected spelling in category labels, platter names, and inclusion headings.
+
+## Supplemental imagery and content completion — 2026-10-24
+
+- Filled homepage food showcase and three homepage branch cards with user-provided menu and restaurant photos. Added user-provided restaurant dining imagery to the Offers page and supplied visual context to branch details. These general restaurant images are not described as verified exact branch pins.
+- Generated one editorial Afghan food illustration for the homepage promotional banner. It is clearly labeled in all three languages as illustrative artwork, not an actual restaurant photograph or current offer. The user's original supplied image remains the hero photo.
+- Added responsive image styling and shared loading for regular and base64-encoded image assets. Translated image descriptions in Pashto, Dari, and English.
+- Preserved the gallery constraint: no photos were added to the gallery. It remains at 20 images.
+- Completed menu price notes and branch details using available supplied information. Historical prices remain marked as unverified; Shahr-e-Naw address and phone remain marked for confirmation because no phone was supplied.
+- Local verification: `npm test` passed for 7 pages, 7 menu items, 3 branches, 20 gallery photos, and 3 locales; `node --check js/main.js` and `node --check js/translations.js` passed. Live deployment verification pending publication of this update.

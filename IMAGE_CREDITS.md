@@ -1,7 +1,7 @@
 # Image credits and usage
 
 - The restaurant photograph was supplied by Awal Jan Hematyar in this conversation. The original upload remains unchanged. The Hero uses a 1200 × 675 WebP derivative, optimized to 66,566 bytes, stored as base64 text in `assets/images/hero/dewa-restaurant-hero.webp.b64` so static hosting can serve it without a binary upload. JavaScript decodes the data URI in the browser.
-- No unrelated stock or generated restaurant photos are used. User-provided food, dining, interior, and restaurant exterior photos appear in the gallery. No branch-specific images beyond those supplied were added. Menu visuals use CSS artwork. Branch cards use their addresses and map searches instead of unverified pins.
+- No stock photographs are used. User-provided food, dining, interior, and restaurant exterior photos appear in the gallery and in supporting homepage, menu, offers, and branch sections. The branch images are general user-provided restaurant photos, not confirmed photographs of each specific branch. Map links search the supplied addresses rather than claiming exact verified pins. Menu cards use supplied menu photographs.
 
 
 ## Gallery photographs added 2026-10-23
@@ -27,3 +27,8 @@ Seven food photographs supplied by the user are mapped to the existing menu item
 ## Menu details
 
 Menu inclusions and historical prices were transcribed from the user-provided Dewa Biryani promotional posters. The 550 AFN special platter poster lists half-kilogram Degi Chicken, one biryani serving, one Coca-Cola bottle, three breads, salad, and chutney. A separate Friday Degi Chicken offer poster displays 350 AFN with 370 AFN crossed out; sides are not confirmed as included. These are historical poster details, not verified current pricing.
+
+
+## Generated illustration — 2026-10-24
+
+- `assets/images/generated/afghan-food-illustration.webp` is an AI-generated editorial illustration of an Afghan-style meal, created for the homepage promotional banner. It is explicitly labeled in Pashto, Dari, and English as an illustration, not an actual photograph of a Dewa Biryani dish or restaurant, and is not presented as proof of an active offer. The user-provided hero photograph remains unchanged.
