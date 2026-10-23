@@ -25,3 +25,5 @@
 .feature-photo{padding:1rem;min-height:0}
 .feature-photo img{height:340px;min-height:0;max-height:340px;object-fit:cover}
 @media(max-width:600px){.feature-photo{padding:1rem 1rem 0}.feature-photo img{height:220px;max-height:220px}}
+
+.delivery-note{display:inline-flex;align-items:center;gap:.45rem;margin:.6rem 0;padding:.45rem .8rem;border:1px solid #82953a88;border-radius:999px;background:#82953a20;color:var(--cream);font-weight:700}.delivery-note::before{content:"✓";color:#c8df79}
