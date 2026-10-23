@@ -10,3 +10,5 @@
 @media(max-width:600px){.mini-food-grid{grid-auto-columns:82%;grid-auto-flow:column;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.4rem}.mini-food{scroll-snap-align:start}}
 
 .lightbox button:disabled{opacity:.35;cursor:not-allowed}.gallery-filters{margin-top:1.25rem}
+
+.details-toggle{align-self:flex-start;border:0;background:transparent;color:#76520e;text-decoration:underline;text-underline-offset:3px;padding:.3rem 0;cursor:pointer}.menu-details{color:#514a3e;font-size:.88rem}
