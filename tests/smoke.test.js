@@ -22,6 +22,7 @@ for(const item of galleryItems){for(const lang of ['ps','fa','en'])assert.ok(ite
 assert.ok(branches[1].phones.length===0,'Do not invent a Shahr-e-Naw phone number');
 assert.equal(siteConfig.officialSocial.tiktok,'','Do not publish an unverified TikTok account');
 for(const lang of ['ps','fa','en']) assert.ok(translations[lang].home&&translations[lang].menu&&translations[lang].contact);
+for(const lang of ['ps','fa','en'])assert.ok(translations[lang].includes,`Platter heading translated: ${lang}`);
 for(const lang of ['ps','fa','en'])for(const key of ['galleryAll','galleryFood','galleryInterior','galleryExterior','galleryDining','galleryBranches'])assert.ok(translations[lang][key],`Gallery filter translation: ${lang}/${key}`);
 for(const file of pages){const html=await readFile(new URL(`../${file}`,import.meta.url),'utf8');assert.match(html,/<title>.+<\/title>/);assert.match(html,/meta name="description"/);assert.match(html,/id="main"/);assert.match(html,/js\/main\.js/);}
 for(const file of [...pages,'js/translations.js','js/gallery-data.js'])assert.ok(!(await readFile(new URL(`../${file}`,import.meta.url),'utf8')).includes('دیوه'),'Use corrected Pashto brand spelling');
