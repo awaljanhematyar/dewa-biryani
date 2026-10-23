@@ -8,3 +8,5 @@
 
 .carousel-head{display:flex;align-items:center;justify-content:space-between;margin-top:2rem}.carousel-head h3{font-size:1.25rem}.carousel-controls{display:flex;gap:.5rem}.carousel-controls button{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#1b1712;color:var(--gold);font-size:1.4rem;cursor:pointer}.mini-food-grid{scroll-behavior:smooth}.menu-food-visual{font-size:1.3rem}
 @media(max-width:600px){.mini-food-grid{grid-auto-columns:82%;grid-auto-flow:column;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.4rem}.mini-food{scroll-snap-align:start}}
+
+.lightbox button:disabled{opacity:.35;cursor:not-allowed}.gallery-filters{margin-top:1.25rem}
