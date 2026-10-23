@@ -76,5 +76,5 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 
 - Added seven user-provided food photographs to the existing menu cards: the three biryani sizes, half and full Degi Chicken, and the Special Platter. The full Degi Chicken card has two photos.
 - Preserved the JPEG originals and prepared optimized WebP display files. The menu references only the new menu assets; the gallery has not been changed.
-- Local verification: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery photos, and 3 locales. Live deployment verification pending.
+- Verification: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery photos, and 3 locales. On the live menu page, all 6 cards and 7 menu photos loaded at nonzero native image dimensions; the Degi Chicken filter showed 2 cards and 3 photos; searching for the platter returned the single matching card. The gallery remains unchanged. Live desktop browser QA only; mobile viewport widths and Lighthouse scores were not measured.
 
