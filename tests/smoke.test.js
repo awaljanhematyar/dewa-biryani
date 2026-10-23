@@ -20,11 +20,13 @@ assert.equal(galleryItems.length,20,'Gallery keeps the hero image and includes a
 assert.deepEqual(new Set(galleryItems.map(item=>item.category)),new Set(['food','branches','exterior','dining','interior']));
 for(const item of galleryItems){for(const lang of ['ps','fa','en'])assert.ok(item.alt[lang]&&item.caption[lang],`Gallery labels are translated: ${item.id}/${lang}`);if(item.source!=='hero'){const webp=await readFile(new URL(`../assets/images/gallery/optimized/${item.source}.webp.b64`,import.meta.url),'utf8');const original=await readFile(new URL(`../assets/images/gallery/originals/${item.source}.${['05-1000474144'].includes(item.source)?'webp':'jpg'}.b64`,import.meta.url),'utf8');assert.ok(/^[A-Za-z0-9+/=]+$/.test(webp.trim()),`Optimized image stored: ${item.id}`);assert.ok(/^[A-Za-z0-9+/=]+$/.test(original.trim()),`Original image preserved: ${item.id}`)}}
 assert.ok(branches[1].phones.length===0,'Do not invent a Shahr-e-Naw phone number');
-assert.equal(siteConfig.officialSocial.tiktok,'','Do not publish an unverified TikTok account');
+assert.equal(siteConfig.officialSocial.tiktok,'https://www.tiktok.com/@dewabiryani?_r=1&_t=ZS-9AnrsALGWo8','Use the TikTok URL supplied by the user');
 for(const lang of ['ps','fa','en']) assert.ok(translations[lang].home&&translations[lang].menu&&translations[lang].contact);
+for(const lang of ['ps','fa','en'])assert.ok(translations[lang].freeDelivery&&translations[lang].tiktokLabel&&translations[lang].tiktokOffers,`Delivery and TikTok labels translated: ${lang}`);
 for(const lang of ['ps','fa','en'])assert.ok(translations[lang].includes,`Platter heading translated: ${lang}`);
 for(const lang of ['ps','fa','en'])for(const key of ['galleryAll','galleryFood','galleryInterior','galleryExterior','galleryDining','galleryBranches'])assert.ok(translations[lang][key],`Gallery filter translation: ${lang}/${key}`);
-for(const file of pages){const html=await readFile(new URL(`../${file}`,import.meta.url),'utf8');assert.match(html,/<title>.+<\/title>/);assert.match(html,/meta name="description"/);assert.match(html,/id="main"/);assert.match(html,/js\/main\.js/);}
+for(const file of pages){const html=await readFile(new URL(`../${file}`,import.meta.url),'utf8');assert.match(html,/<title>.+<\/title>/);assert.match(html,/meta name="description"/);assert.match(html,/id="main"/);assert.match(html,/js\/main\.js/);assert.match(html,/data-social="tiktok"/);}
+for(const file of ['index.html','menu.html','offers.html','contact.html'])assert.match(await readFile(new URL(`../${file}`,import.meta.url),'utf8'),/data-i18n="freeDelivery"/);
 for(const file of [...pages,'js/translations.js','js/gallery-data.js'])assert.ok(!(await readFile(new URL(`../${file}`,import.meta.url),'utf8')).includes('دیوه'),'Use corrected Pashto brand spelling');
 const main=await readFile(new URL('../js/main.js',import.meta.url),'utf8');assert.match(main,/menu-includes/);
 const index=await readFile(new URL('../index.html',import.meta.url),'utf8');
