@@ -17,3 +17,8 @@ Added six more user-provided photographs: two restaurant team members, an exteri
 ## Additional gallery photographs supplied 2026-10-23 — set 3
 
 Added three user-provided photos: a cook grilling kebabs, a staff member presenting a flaming platter, and the restaurant flag beside its illuminated sign. Original JPEG bytes are preserved as base64 files; compressed WebP derivatives are used for gallery display.
+
+
+## Menu photographs supplied 2026-10-23
+
+Seven food photographs supplied by the user are mapped to the existing menu items. Biryani sizes use photos of rice and chicken platters; the half and full Degi Chicken entries use chicken photographs; the Special Platter uses the multi-dish table photograph. The full Degi Chicken card includes two images. Optimized WebP display files are stored as base64 under `assets/images/menu/optimized/`; original JPEG bytes are preserved as base64 under `assets/images/menu/originals/`. Images are user-provided and are not treated as a source for current prices.

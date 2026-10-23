@@ -72,3 +72,9 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Added three more user-provided photographs: kebab grilling, a flaming platter, and the Dewa Biryani flag/sign. The gallery now contains 19 supplied photos plus the hero image (20 items total).
 - Kept the original JPEG file bytes as base64 assets; WebP display copies are optimized and lazy-loaded. Added translated alt text and captions in Pashto, Dari, and English.
 - Verification after publication: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery items, and 3 languages. `node --check js/main.js` and `node --check js/gallery-data.js` passed. The live gallery displayed all 20 cards. Its food filter showed 8 visible cards. Each of the three new photos opened in the lightbox; their natural image widths were 852, 962, and 963 px. The first lightbox image needed an extra 700 ms to finish loading. The available browser viewport was 1363 px; other responsive widths and Lighthouse scores were not measured.
+# Menu photo update — 2026-10-23
+
+- Added seven user-provided food photographs to the existing menu cards: the three biryani sizes, half and full Degi Chicken, and the Special Platter. The full Degi Chicken card has two photos.
+- Preserved the JPEG originals and prepared optimized WebP display files. The menu references only the new menu assets; the gallery has not been changed.
+- Local verification: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery photos, and 3 locales. Live deployment verification pending.
+
