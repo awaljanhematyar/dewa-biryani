@@ -11,4 +11,6 @@
 
 .lightbox button:disabled{opacity:.35;cursor:not-allowed}.gallery-filters{margin-top:1.25rem}
 
+.gallery-item{display:block;width:100%;text-align:start}.gallery-item img{background:linear-gradient(135deg,#30251a,#12100e);color:transparent}.gallery-item .gallery-category{position:absolute;inset-block-start:.7rem;inset-inline-start:.7rem;padding:.25rem .65rem;border:1px solid #f6b52c66;border-radius:999px;background:#11100edb;color:var(--gold);font-size:.75rem;line-height:1.5}.gallery-item[hidden]{display:none}
+
 .details-toggle{align-self:flex-start;border:0;background:transparent;color:#76520e;text-decoration:underline;text-underline-offset:3px;padding:.3rem 0;cursor:pointer}.menu-details{color:#514a3e;font-size:.88rem}
