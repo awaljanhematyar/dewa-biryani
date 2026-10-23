@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dewa-biryani.vercel.app/sitemap.xml
