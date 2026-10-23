@@ -22,3 +22,8 @@ Added three user-provided photos: a cook grilling kebabs, a staff member present
 ## Menu photographs supplied 2026-10-23
 
 Seven food photographs supplied by the user are mapped to the existing menu items. Biryani sizes use photos of rice and chicken platters; the half and full Degi Chicken entries use chicken photographs; the Special Platter uses the multi-dish table photograph. The full Degi Chicken card includes two images. Optimized WebP display files are stored as base64 under `assets/images/menu/optimized/`; original JPEG bytes are preserved as base64 under `assets/images/menu/originals/`. Images are user-provided and are not treated as a source for current prices.
+
+
+## Menu details
+
+Menu inclusions and historical prices were transcribed from the user-provided Dewa Biryani promotional posters. The 550 AFN special platter poster lists half-kilogram Degi Chicken, one biryani serving, one Coca-Cola bottle, three breads, salad, and chutney. A separate Friday Degi Chicken offer poster displays 350 AFN with 370 AFN crossed out; sides are not confirmed as included. These are historical poster details, not verified current pricing.

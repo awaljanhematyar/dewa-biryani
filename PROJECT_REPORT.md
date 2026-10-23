@@ -22,7 +22,7 @@ Website source published to GitHub and deployed to Vercel. Portfolio project car
 
 ## Testing
 
-- `npm test`: passed. Smoke checks cover seven pages, six menu items, three branches, and three locales.
+- `npm test`: passed. Smoke checks cover seven pages, seven menu items, three branches, and three locales.
 - `node --check js/main.js` and `node --check js/translations.js`: passed.
 - Live route check: all seven pages opened and showed a main landmark, canonical URL, and meta description.
 - Live image check: hero and About photos loaded at 1200 px natural width. No broken non-dialog images were found on the seven pages.
@@ -78,3 +78,7 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Preserved the JPEG originals and prepared optimized WebP display files. The menu references only the new menu assets; the gallery has not been changed.
 - Verification: `npm test` passed for 7 pages, 6 menu items, 3 branches, 20 gallery photos, and 3 locales. On the live menu page, all 6 cards and 7 menu photos loaded at nonzero native image dimensions; the Degi Chicken filter showed 2 cards and 3 photos; searching for the platter returned the single matching card. The gallery remains unchanged. Live desktop browser QA only; mobile viewport widths and Lighthouse scores were not measured.
 
+
+- Updated Pashto branding text from «دیوه» to «ډيوه» in page copy and gallery labels.
+- Added poster-based menu cards: the 550 AFN special platter lists half-kilogram Degi Chicken, one biryani serving, one Coca-Cola, three breads, salad, and chutney; the Friday Degi Chicken poster offer lists 350 AFN with 370 AFN crossed out. Both are historical poster prices and require restaurant confirmation.
+- The Friday poster does not clearly confirm sides as included, so the card asks customers to confirm salad and vegetables. No gallery images were added.
