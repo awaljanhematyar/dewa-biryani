@@ -27,7 +27,7 @@ Home, menu, offers, about, gallery, branches, and contact.
 - The contact form validates locally and does not send messages. Calls open the customer's phone app; there is no online order or payment flow.
 - No backend, admin dashboard, or login is included.
 - This is an independent demonstration concept, not a claim of an official or paid client project.
-- The user-provided restaurant photo is stored as an optimized WebP base64 text asset for static-host compatibility. Other restaurant, food, and branch photos were not supplied.
+- The user-provided restaurant photo and seven user-provided menu photos are stored as optimized WebP base64 text assets for static-host compatibility. Other branch-specific photographs were not supplied.
 
 ## Verification
 
