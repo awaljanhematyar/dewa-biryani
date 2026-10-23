@@ -45,15 +45,23 @@ Responsive CSS includes tablet and mobile breakpoints at 850 px and 600 px. The 
 - Historical poster prices: biryani 120/150/200 AFN, half/full degi chicken 200/370 AFN, and special platter 550 AFN. Current prices are unverified.
 - Branch addresses and phones are user-supplied. Maps use Google Maps address searches, not verified exact pins. Shahr-e-Naw spelling/landmark needs confirmation, and no phone was supplied for that branch.
 - Facebook is linked as the official page; no official TikTok or active offer post was verified.
-- The hero uses the user-provided restaurant photo. Ten more authentic user-provided photos now appear in the gallery, with their exact original bytes preserved as base64 source files and compressed WebP display derivatives. Food menu cards use CSS illustrations; no ratings or review counts are fabricated.
+- The hero uses the user-provided restaurant photo. Sixteen authentic user-provided photos now appear in the gallery, with their exact original bytes preserved as base64 source files and compressed WebP display derivatives. Food menu cards use CSS illustrations; no ratings or review counts are fabricated.
 - Contact is a local demo form only. No order submission, online payment, server, or admin dashboard exists.
 - The portfolio screenshot is a desktop capture. A mobile screenshot and exact viewport-width QA remain outstanding.
 
 
 ## Gallery update — 2026-10-23
 
-- Added the ten user-supplied gallery photographs; the previously supplied hero photograph remains as an existing gallery item (11 displayed photos total).
+- Added the first ten user-supplied gallery photographs; the previously supplied hero photograph remained as an existing item (11 displayed photos at that update).
 - Added filters for food, interior, exterior, dining/people, and branches/signs in Pashto, Dari, and English.
 - Added lazy image loading, optimized WebP display assets, original source preservation, and lightbox next/previous plus keyboard navigation and focus return.
 - Gallery photo credits identify the user as the source. No further images are included unless the user asks.
-- Verification: `npm test`, `node --check js/main.js`, and `node --check js/translations.js` passed. The live gallery rendered 11 photos; all 11 opened in the lightbox at nonzero native dimensions. Food filter showed three photos, previous/next buttons and Arrow keys changed images, Escape closed the dialog and returned focus, and Dari/English filter labels switched correctly. No site-origin console errors were found. Tests ran at the available 1363 px desktop viewport; this update did not measure mobile widths or Lighthouse scores.
+- Verification of the first ten-image update: `npm test`, `node --check js/main.js`, and `node --check js/translations.js` passed. The live gallery rendered 11 photos; all opened in the lightbox at nonzero native dimensions. Food filter showed three photos, navigation buttons and Arrow keys changed images, Escape closed the dialog and returned focus, and Dari/English filter labels switched correctly. No site-origin console errors were found. Tests ran at the available 1363 px desktop viewport; mobile widths and Lighthouse scores were not measured.
+
+
+## Gallery update 2 — 2026-10-23
+
+- Added six more user-provided photographs. The gallery now contains 16 supplied photos plus the existing user-provided hero photo, 17 items total.
+- Preserved originals and added compressed WebP display versions.
+- Captions describe the visible subjects. Promotional poster images are not treated as proof of current prices or delivery promises.
+- Live verification and interaction results for these six additions are recorded after deployment.
